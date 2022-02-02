@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 import { AltService } from './alt.service';
 
 @Module({
-  imports: [],
+  imports: [TypeOrmModule.forRoot()],
   controllers: [AppController, AltController],
   providers: [AppService, AltService],
 })
